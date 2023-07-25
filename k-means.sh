@@ -16,7 +16,7 @@ for k in "${k_values[@]}"; do
   mahout kmeans \
    -i docw-vectors/tfidf-vectors \
    -c docw-canopy-centroids-Manhattan \
-   -o hdfs://lena/user/nmart001/docs-kmeans-clusters-Manhattan-${k} \
+   -o hdfs://lena/user/userID/docs-kmeans-clusters-Manhattan-${k} \
    -dm org.apache.mahout.common.distance.ManhattanDistanceMeasure \
    -cl \
    -cd 0.1 \
